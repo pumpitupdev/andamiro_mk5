@@ -1,6 +1,6 @@
 # Andamiro MK5 Emulation Layer
 
-This library comprises a collection of HLE hardware to replicate an Andamiro MK5 arcade computer.
+This library comprises a collection of HLE routines to replicate an Andamiro MK5 arcade computer.
 
 Features:
 - Programmable lockchip key via the CAT702_KEY envar.
