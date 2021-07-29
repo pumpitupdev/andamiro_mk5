@@ -1,0 +1,62 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "[Library] Andamiro MK5 (Windows x86)",
+            "type": "shell",            
+            "command": [
+                "i686-w64-mingw32-gcc",
+                "-m32",
+				"-shared",
+                "-fshort-wchar",              		
+                "${workspaceFolder}/am030614.c",
+                "${workspaceFolder}/at93c86.c",                     
+                "${workspaceFolder}/cat702.c", 
+                "${workspaceFolder}/ioport_windows.c", 
+                "${workspaceFolder}/keyboardio.c", 
+                "${workspaceFolder}/sigdriver.c",
+                "${workspaceFolder}/mk5.c",                               
+                "-static",      
+                "-static-libgcc",                 
+                "-o ${workspaceFolder}/andamiro_mk5.dll"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },        
+        {
+            "label": "[Library] Andamiro MK5 (Linux x86)",
+            "type": "shell",            
+            "command": [
+                "gcc",
+                "-m32",
+				"-shared",             		
+                "${workspaceFolder}/am030614.c",
+                "${workspaceFolder}/at93c86.c",                     
+                "${workspaceFolder}/cat702.c", 
+                "${workspaceFolder}/ioport_linux.c", 
+                "${workspaceFolder}/keyboardio.c", 
+                "${workspaceFolder}/sigdriver.c",
+                "${workspaceFolder}/mk5.c",                               
+                "-static",      
+                "-static-libgcc",
+                "-lpthread",               
+                "-o ${workspaceFolder}/andamiro_mk5.so"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }      
+    ]
+
+}
