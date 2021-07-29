@@ -81,5 +81,5 @@ LONG WINAPI ioport_handler(PEXCEPTION_POINTERS pExceptionInfo){
 
 
 void IOPort_Init(){
-    AddVectoredExceptionHandler(1,ioport_handler);
+    SetUnhandledExceptionFilter(ioport_handler);    
 }
