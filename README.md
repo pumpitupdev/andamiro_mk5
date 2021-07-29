@@ -10,7 +10,7 @@ Features:
 
 To Use:
 1. Bind this library against any MK5 game (windows/linux).
-2. Set your envars:
+2. Set your CAT702_KEY envar:
     - 02c1f9787c1c10f0 for Premere 3
     - f0e1f9787cfec2c0 for Prex 3
     - f078f9fd1c20c202 for Exceed
