@@ -4,8 +4,9 @@ This library comprises a collection of HLE routines to replicate an Andamiro MK5
 
 Features:
 - Programmable lockchip key via the CAT702_KEY envar.
-- Keyboard support via the PIUIO_KEY envar.
+- PIUIO Emulation with optional keyboard support via the PIUIO_KEY envar.
 - EEPROM Path support via the EEPROM_PATH envar.
+- LED Readout support.
 
 To Use:
 1. Bind this library against any MK5 game (windows/linux).
